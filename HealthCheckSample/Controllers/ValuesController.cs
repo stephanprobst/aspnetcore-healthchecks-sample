@@ -8,8 +8,9 @@ using Microsoft.AspNetCore.Http;
 namespace HealthCheckSample.Controllers
 {
     [Authorize]
+    [ApiController]
     [Route("api/[controller]")]
-    public class ValuesController : Controller
+    public class ValuesController : ControllerBase
     {
         private readonly IHealthCheckService _healthCheckService;
 
